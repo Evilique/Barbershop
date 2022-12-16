@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>БАРБЕРШОП «БОРОДИНСКИЙ»</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="page-main inner-page">
+  <header class="header">
+    <nav class="header__nav">
+      <div class="header__nav-wrapper">
+        <div class="container inner__nav"><a href="index.html" class="header__logo"><img src="img/logo-inner.svg"
+              alt="Логотип БАРБЕРШОПА БОРОДИНСКИЙ" width="111" height="24"></a>
+          <ul class="header__list">
+            <li class="header__item"><a class="header__link" href="info.html">ИНФОРМАЦИЯ</a></li>
+            <li class="header__item"><a class="header__link" href="news.html">НОВОСТИ</a></li>
+            <li class="header__item"><a class="header__link" href="price.html">ПРАЙС-ЛИСТ</a></li>
+            <li class="header__item header__item--current"><a class="header__link" href="catalog.html">МАГАЗИН</a></li>
+            <li class="header__item"><a class="header__link" href="contacts.html">КОНТАКТЫ</a></li>
+          </ul>
+          <div class="user-nav"><a class="user-link open-form" href="#">ВХОД</a></div>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <main class="page-catalog container">
+    <h1 class="page__title">СРЕДСТВА ДЛЯ УХОДА</h1>
+    <ul class="breadcrumbs">
+      <li><a href="index.html">ГЛАВНАЯ</a></li>
+      <li><a href="index.html">МАГАЗИН</a></li>
+      <li class="breadcrumbs__current">СРЕДСТВА ДЛЯ УХОДА</li>
+    </ul>
+    <section class="fielters">
+      <h2 class="visually-hidden">Фильтр товаров</h2>
+      <form class="fielter" method="get" action="https://echo.htmlacademy.ru">
+        <fieldset>
+          <legend>ПРОИЗВОДИТЕЛИ</legend>
+          <ul>
+            <li class="fielter-option"><input class="visually-hidden fielter__input-checkbox" type="checkbox"
+                name="baxter-of-california" id="filter-baxter-of-california" checked="checked"> <label
+                for="filter-baxter-of-california">Baxter of California</label></li>
+            <li class="fielter-option"><input class="visually-hidden fielter__input-checkbox" type="checkbox"
+                name="mr-natty" id="filter-mr-natty"> <label for="filter-mr-natty">Mr Natty</label></li>
+            <li class="fielter-option"><input class="visually-hidden fielter__input-checkbox" type="checkbox"
+                name="suavecito" id="filter-suavecito" checked="checked"> <label
+                for="filter-suavecito">Suavecito</label></li>
+            <li class="fielter-option"><input class="visually-hidden fielter__input-checkbox" type="checkbox"
+                name="malin+goetz" id="filter-malin+goetz"> <label for="filter-malin+goetz">Malin+Goetz</label></li>
+            <li class="fielter-option"><input class="visually-hidden fielter__input-checkbox" type="checkbox"
+                name="murrays" id="filter-murrays"> <label for="filter-murrays">Murray’s</label></li>
+            <li class="fielter-option"><input class="visually-hidden fielter__input-checkbox" type="checkbox"
+                name="american-crew" id="filter-american-crew"> <label for="filter-american-crew">American Crew</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>ГРУППЫ ТОВАРОВ:</legend>
+          <ul>
+            <li><input class="visually-hidden fielter__input-radio" type="radio" name="product-group"
+                id="filter-shaving-accessories"> <label for="filter-shaving-accessories">Бритвенные
+                принадлежности</label></li>
+            <li><input class="visually-hidden fielter__input-radio" type="radio" name="product-group"
+                id="filter-care-products" checked="checked"> <label for="filter-care-products">Средства для
+                ухода</label></li>
+            <li><input class="visually-hidden fielter__input-radio" type="radio" name="product-group"
+                id="filter-accessories"> <label for="filter-accessories">Аксессуары</label></li>
+          </ul>
+        </fieldset><button class="button" type="submit">Показать</button>
+      </form>
+    </section>
+    <section class="catalog">
+      <h2 class="visually-hidden">Список средств для ухода</h2>
+      <ul class="catalog__list">
+        <li class="catalog__item"><a href="product.html">
+            <p><img src="img/catalog-1.jpg" alt="" width="220" height="165"></p>
+            <h3><span class="catalog__category">Набор для путешествий </span><span>«Baxter of California»</span></h3>
+          </a>
+          <p class="catalog__price"><b>2 900 ₽</b> <button class="button" type="button"
+              aria-label="Добавить Набор для путешествий «Baxter of California» в корзину">КУПИТЬ</button></p>
+        </li>
+        <li class="catalog__item"><a href="#">
+            <p><img src="img/catalog-2.jpg" alt="" width="220" height="165"></p>
+            <h3><span class="catalog__category">Увлажняющий кондиционер </span><span>«Baxter of California»</span></h3>
+          </a>
+          <p class="catalog__price"><b>750 ₽</b> <button class="button" type="button"
+              aria-label="Добавить Увлажняющий кондиционер «Baxter of California» в корзину">КУПИТЬ</button></p>
+        </li>
+        <li class="catalog__item"><a href="#">
+            <p><img src="img/catalog-3.jpg" alt="" width="220" height="165"></p>
+            <h3><span class="catalog__category">Гель для волос </span><span>«SUAVECITO»</span></h3>
+          </a>
+          <p class="catalog__price"><b>290 ₽</b> <button class="button" type="button"
+              aria-label="Добавить Гель для волос «SUAVECITO» в корзину">КУПИТЬ</button></p>
+        </li>
+        <li class="catalog__item"><a href="#">
+            <p><img src="img/catalog-4.jpg" alt="" width="220" height="165"></p>
+            <h3><span class="catalog__category">Глина для укладки волос </span><span>«American crew»</span></h3>
+          </a>
+          <p class="catalog__price"><b>500 ₽</b> <button class="button" type="button"
+              aria-label="Добавить Глина для укладки волос «American crew» в корзину">КУПИТЬ</button></p>
+        </li>
+        <li class="catalog__item"><a href="#">
+            <p><img src="img/catalog-5.jpg" alt="" width="220" height="165"></p>
+            <h3><span class="catalog__category">Гель для волос </span><span>«AMERICAN CREW»</span></h3>
+          </a>
+          <p class="catalog__price"><b>300 ₽</b> <button class="button" type="button"
+              aria-label="Добавить Гель для волос «AMERICAN CREW» в корзину">КУПИТЬ</button></p>
+        </li>
+        <li class="catalog__item"><a href="#">
+            <p><img src="img/catalog-6.jpg" alt="" width="220" height="165"></p>
+            <h3><span class="catalog__category">Набор для бритья </span><span>«Baxter of California»</span></h3>
+          </a>
+          <p class="catalog__price"><b>3 900 ₽</b> <button class="button" type="button"
+              aria-label="Добавить Набор для бритья «Baxter of California» в корзину">КУПИТЬ</button></p>
+        </li>
+      </ul>
+      <ul class="pagination__list">
+        <li class="pagination__item"><a href="#">1</a></li>
+        <li class="pagination__item pagination__item--current"><a>2</a></li>
+        <li class="pagination__item"><a href="#">3</a></li>
+        <li class="pagination__item"><a href="#">4</a></li>
+      </ul>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <section class="footer__contacts">
+        <h2 class="visually-hidden">Как нас найти</h2>
+        <p>БАРБЕРШОП «БОРОДИНСКИЙ»<br>АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, УЛ. Б. КОНЮШЕННАЯ, Д. 19/8<br><a href="#"
+            class="open-map">КАК НАС НАЙТИ?</a><br>ТЕЛЕФОН: <a href="tel:+78126660266">+7 (812) 666-02-66</a></p>
+      </section>
+      <section class="footer__social">
+        <h2>Давайте дружить!</h2>
+        <ul class="footer__social-list">
+          <li><a class="footer__social-btn" href="#"><span class="visually-hidden">Вконтакте</span> <svg width="27"
+                height="15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M26.785 13.47l-.092-.168a13.489 13.489 0 00-2.68-2.98A15.088 15.088 0 0122.887 9.2a.967.967 0 01-.215-1.182 9.844 9.844 0 011.248-1.777l.91-1.162c1.618-2.085 2.3-3.41 2.047-3.972l-.092-.129a.815.815 0 00-.409-.218 2.287 2.287 0 00-.9 0h-3.98a.442.442 0 00-.277 0h-.307a.506.506 0 00-.153.139.992.992 0 00-.154.238 22.97 22.97 0 01-1.494 3.059c-.348.556-.665.993-.962 1.46a7 7 0 01-.747.883 5.85 5.85 0 01-.542.477c-.153.119-.276.169-.358.149l-.235-.05a.924.924 0 01-.318-.338 1.321 1.321 0 01-.163-.526V1.614a3.17 3.17 0 000-.616 2.186 2.186 0 00-.144-.437.74.74 0 00-.286-.338 1.909 1.909 0 00-.512-.178 9.94 9.94 0 00-1.882 0 9.287 9.287 0 00-3.346.308c-.203.1-.384.239-.532.407-.174.198-.195.307-.072.327.235.011.465.069.677.17.21.1.398.242.55.416l.083.16c.092.203.16.416.204.635.061.328.102.66.123.993.041.565.041 1.132 0 1.698 0 .476-.092.844-.133 1.102a2 2 0 01-.276.675c-.045.108-.1.21-.164.308l-.072.07a1.24 1.24 0 01-.378.07.97.97 0 01-.41-.23 3.623 3.623 0 01-.583-.525 7.732 7.732 0 01-.675-.924c-.288-.46-.551-.934-.788-1.42l-.235-.387-.583-1.113c-.238-.465-.45-.942-.635-1.43A.907.907 0 005.38.92h-.072a.882.882 0 00-.184-.16 1.657 1.657 0 00-.369-.09L.918.7A1.052 1.052 0 00.12.978H.008a.78.78 0 000 .219c.011.125.039.248.082.367a36.205 36.205 0 001.84 3.724 43.045 43.045 0 001.71 2.86c.48.725 1.022 1.41 1.513 2.056.492.645.88 1.062 1.024 1.24l.378.408.348.338c.323.28.665.539 1.023.774.473.335.965.644 1.474.924.58.312 1.2.552 1.842.715a6.504 6.504 0 002.066.278h1.617c.28-.003.547-.11.747-.298v-.07a1.03 1.03 0 00.102-.248 2.21 2.21 0 000-.367 4.54 4.54 0 01.092-1.053c.042-.245.12-.483.236-.705.077-.15.177-.287.297-.407l.235-.199h.112a.937.937 0 01.799.209c.317.228.602.495.849.794.266.308.593.665.962 1.043.309.325.652.617 1.023.874l.286.159c.228.129.473.229.727.298.249.087.517.11.777.069l3.633-.1c.284.018.567-.04.819-.168a.663.663 0 00.347-.368.868.868 0 000-.456 1.514 1.514 0 00-.102-.368l-.082-.05z"
+                  fill="#fff" />
+              </svg></a></li>
+          <li><a class="footer__social-btn" href="#"><span class="visually-hidden">Фейсбук</span> <svg width="11"
+                height="23" viewBox="0 0 11 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M3.62378 1.13123C4.59355 0.376244 5.82388 -0.0252255 7.08674 0.00122876H11V3.86123H8.46979C8.19886 3.85027 7.93242 3.92836 7.7169 4.08187C7.50138 4.23537 7.35045 4.45457 7.29045 4.70123V7.28123H11C10.9142 8.52123 10.7212 9.76123 10.5604 11.0012H7.34405V22.0012H2.40156V11.0012H0V7.30123H2.38012V3.71123C2.43182 2.7359 2.87591 1.81461 3.62378 1.13123Z"
+                  fill="white" />
+              </svg></a></li>
+          <li><a class="footer__social-btn" href="#"><span class="visually-hidden">Инстаграм</span> <svg width="20"
+                height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M18 0H2C1.46957 0 0.960859 0.210714 0.585786 0.585786C0.210714 0.960859 0 1.46957 0 2L0 18C0 18.5304 0.210714 19.0391 0.585786 19.4142C0.960859 19.7893 1.46957 20 2 20H18C18.5304 20 19.0391 19.7893 19.4142 19.4142C19.7893 19.0391 20 18.5304 20 18V2C20 1.46957 19.7893 0.960859 19.4142 0.585786C19.0391 0.210714 18.5304 0 18 0V0ZM10 6C10.7911 6 11.5645 6.2346 12.2223 6.67412C12.8801 7.11365 13.3928 7.73836 13.6955 8.46927C13.9983 9.20017 14.0775 10.0044 13.9231 10.7804C13.7688 11.5563 13.3878 12.269 12.8284 12.8284C12.269 13.3878 11.5563 13.7688 10.7804 13.9231C10.0044 14.0775 9.20017 13.9983 8.46927 13.6955C7.73836 13.3928 7.11365 12.8801 6.67412 12.2223C6.2346 11.5645 6 10.7911 6 10C6 8.93913 6.42143 7.92172 7.17157 7.17157C7.92172 6.42143 8.93913 6 10 6ZM2.5 18C2.43825 18.0041 2.37631 17.9959 2.31772 17.976C2.25914 17.956 2.20507 17.9247 2.15861 17.8839C2.11215 17.843 2.07423 17.7933 2.04701 17.7377C2.01979 17.6822 2.00382 17.6218 2 17.56V9H4.1C4.01687 9.32646 3.98316 9.66354 4 10C4 11.5913 4.63214 13.1174 5.75736 14.2426C6.88258 15.3679 8.4087 16 10 16C11.5913 16 13.1174 15.3679 14.2426 14.2426C15.3679 13.1174 16 11.5913 16 10C16.0168 9.66354 15.9831 9.32646 15.9 9H18V17.5C18.0041 17.5617 17.9959 17.6237 17.976 17.6823C17.956 17.7409 17.9247 17.7949 17.8839 17.8414C17.843 17.8878 17.7933 17.9258 17.7377 17.953C17.6822 17.9802 17.6218 17.9962 17.56 18H2.5ZM18 4.5C18.0041 4.56175 17.9959 4.62369 17.976 4.68228C17.956 4.74086 17.9247 4.79493 17.8839 4.84139C17.843 4.88785 17.7933 4.92577 17.7377 4.95299C17.6822 4.98021 17.6218 4.99618 17.56 5H15.5C15.4383 5.00407 15.3763 4.9959 15.3177 4.97597C15.2591 4.95604 15.2051 4.92473 15.1586 4.88385C15.1122 4.84297 15.0742 4.79332 15.047 4.73774C15.0198 4.68217 15.0038 4.62176 15 4.56V2.5C14.9959 2.43825 15.0041 2.37631 15.024 2.31772C15.044 2.25914 15.0753 2.20507 15.1161 2.15861C15.157 2.11215 15.2067 2.07423 15.2623 2.04701C15.3178 2.01979 15.3782 2.00382 15.44 2H17.5C17.5617 1.99593 17.6237 2.0041 17.6823 2.02403C17.7409 2.04396 17.7949 2.07527 17.8414 2.11615C17.8878 2.15703 17.9258 2.20668 17.953 2.26226C17.9802 2.31783 17.9962 2.37824 18 2.44V4.5Z"
+                  fill="white" />
+              </svg></a></li>
+        </ul>
+      </section>
+      <p class="footer__copyright"><b>Разработано:</b> <a class="button" href="#">HTML ACADEMY</a></p>
+    </div>
+  </footer>
+  <div class="modal">
+    <div class="modal__body">
+      <h2>ЛИЧНЫЙ КАБИНЕТ</h2>
+      <p class="login__descr">Введите пожалуйста свой логин и пароль</p>
+      <form class="login__form" action="https://echo.htmlacademy.ru" method="post">
+        <p class="login__item"><input class="login__user-icon" type="email" placeholder="email@example.com"></p>
+        <p class="login__item"><input class="login__password-icon" type="password" placeholder="••••••••"></p>
+        <p class="login__sign"><input class="visually-hidden login__checkbox" type="checkbox" name="remember"
+            id="remember-me" checked="checked"> <label for="remember-me">ЗАПОМНИТЕ МЕНЯ</label> <a class="restore"
+            href="#">Я ЗАБЫЛ ПАРОЛЬ!</a></p><button class="button modal__btn" type="submit">ВОЙТИ</button>
+      </form><button type="button" class="modal-close"><img src="img/close.svg" alt="Закрыть"> <span
+          class="visually-hidden">Закрыть</span></button>
+    </div>
+  </div>
+  <div class="modal-map">
+    <div class="modal__body">
+      <h2 class="visually-hidden">Как до нас добраться</h2><iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.6036253003213!2d30.32085871618553!3d59.938719169053996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1653166881781!5m2!1sru!2sru"
+        width="766" height="560" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        title="АДРЕС: Г. САНКТ-ПЕТЕРБУРГ, Б. КОНЮШЕННАЯ, Д. 19/8"></iframe><button type="button"
+        class="modal-close modal-close__map"><img src="img/close.svg" alt="Закрыть"> <span
+          class="visually-hidden">Закрыть</span></button>
+    </div>
+  </div>
+  <div class="overlay"></div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0/jquery.min.js"></script>
+  <script src="js/script.min.js"></script>
+</body>
+
+</html>
